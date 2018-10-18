@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>String.js Lib test</title>
+    <script src="../lib/NMString.js"></script>
+    <script>
+        function test() {
+            console.log('### random number: ');
+            console.log(randomNumber(10));
+        }
+
+        function trimTest() {
+            let trimTest = '  xxx  xx  ';
+            console.log("trim test type 1 (trim all space within string): ", trim(trimTest, 1));
+            console.log("trim test type 2 (trim both front and back space): ", trim(trimTest, 2));
+            console.log("trim test type 3 (trim back space): ", trim(trimTest, 3));
+            console.log("trim test type 4 (trim front space): ", trim(trimTest, 4));
+        }
+
+        test();
+        trimTest();
+    </script>
+</head>
+
+<body>
+    <p> check console to see message </p>
+</body>
+
+</html>
